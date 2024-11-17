@@ -1,0 +1,61 @@
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 30px;
+  }
+  
+  .header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  .logout-container {
+   
+    margin-top: 40;
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    color:#f7e0f9
+  }
+  
+  .user-info {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row; /* Stack elements vertically */
+    align-items: flex-start; /* Align to the left */
+    margin-left: 0px; /* Adjust spacing as needed */
+    gap: 5px; /* Space between "Welcome" text and Logout button */
+  }
+  
+  .logout-button {
+    margin-top: 0px; /* Optional: Add extra spacing between the text and the button */
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    margin-top: 2px;
+    background-color: var(--danger-hover-color);
+  }
+  

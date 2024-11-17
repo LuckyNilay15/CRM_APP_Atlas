@@ -1,0 +1,12 @@
+:root {
+    --primary-color: #4caf50;        /* Green */
+    --secondary-color: #007bff;     /* Blue */
+    --background-color: #f8f9fa;    /* Light gray */
+    --card-background: #ffffff;     /* White */
+    --header-footer-color: #343a40; /* Dark gray */
+    --text-color: #333;             /* Regular text */
+    --link-color: #007bff;          /* Links */
+    --border-color: #ddd;           /* Borders */
+    --border-radius: 8px;           /* Rounded corners */
+  }
+  
