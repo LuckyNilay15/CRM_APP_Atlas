@@ -3,7 +3,7 @@ import API_BASE_URL from "../apiConfig";
 
 export const createCampaign = async (campaignData) => {
   try {
-    const response = await axios.post(`${API_BASE_URL}/campaigns`, campaignData);
+    const response = await axios.post(`${API_BASE_URL}/api/campaigns`, campaignData);
     return response.data;
   } catch (error) {
     console.error("Error creating campaign:", error);
@@ -13,7 +13,7 @@ export const createCampaign = async (campaignData) => {
 
 export const fetchCampaigns = async () => {
   try {
-    const response = await axios.get(`${API_BASE_URL}/campaigns`);
+    const response = await axios.get(`${API_BASE_URL}/api/campaigns`);
     return response.data;
   } catch (error) {
     console.error("Error fetching campaigns:", error);
@@ -23,7 +23,7 @@ export const fetchCampaigns = async () => {
 
 export const sendMessages = async (campaignId) => {
   try {
-    const response = await axios.post(`${API_BASE_URL}/campaigns/send`);
+    const response = await axios.post(`${API_BASE_URL}/api/campaigns/send`);
     return response.data;
   } catch (error) {
     console.error("Error sending messages:", error);
