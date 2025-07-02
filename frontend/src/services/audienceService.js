@@ -8,7 +8,7 @@ export const createAudience = async (name, criteria) => {
   };
 
   try {
-    const response = await axios.post(`${API_BASE_URL}/audiences`, data);
+    const response = await axios.post(`${API_BASE_URL}/api/audiences`, data);
     console.log("Audience created successfully:", response.data);
     return response.data; // Return response for further use in the frontend
   } catch (error) {
@@ -19,7 +19,7 @@ export const createAudience = async (name, criteria) => {
 
 export const fetchAudiences = async () => {
   try {
-    const response = await axios.get(`${API_BASE_URL}/audiences`);
+    const response = await axios.get(`${API_BASE_URL}/api/audiences`);
     return response.data;
   } catch (error) {
     console.error("Error fetching audiences:", error.response?.data || error.message);
