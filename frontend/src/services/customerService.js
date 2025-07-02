@@ -3,7 +3,7 @@ import API_BASE_URL from "../apiConfig";
 
 export const createCustomer = async (customerData) => {
   try {
-    const response = await axios.post(`${API_BASE_URL}/customers`, customerData);
+    const response = await axios.post(`${API_BASE_URL}/api/customers`, customerData);
     return response.data;
   } catch (error) {
     console.error("Error creating customer:", error);
@@ -13,7 +13,7 @@ export const createCustomer = async (customerData) => {
 
 export const fetchCustomers = async () => {
   try {
-    const response = await axios.get(`${API_BASE_URL}/customers`);
+    const response = await axios.get(`${API_BASE_URL}/api/customers`);
     return response.data;
   } catch (error) {
     console.error("Error fetching customers:", error);
@@ -23,7 +23,7 @@ export const fetchCustomers = async () => {
   // Fetch delivery receipts
 export const fetchDeliveryReceipts = async () => {
   try {
-    const response = await axios.get(`${API_BASE_URL}/communications/receipts`);
+    const response = await axios.get(`${API_BASE_URL}/api/communications/receipts`);
     return response.data;
   } catch (error) {
     console.error("Error fetching delivery receipts:", error);
@@ -34,7 +34,7 @@ export const fetchDeliveryReceipts = async () => {
 // Fetch communication logs
 export const fetchCommunicationLogs = async () => {
   try {
-    const response = await axios.get(`${API_BASE_URL}/communications/logs`);
+    const response = await axios.get(`${API_BASE_URL}/api/communications/logs`);
     return response.data;
   } catch (error) {
     console.error("Error fetching communication logs:", error);
